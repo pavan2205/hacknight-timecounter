@@ -20,7 +20,7 @@ function flipAllCards(time) {
   flip(document.querySelector("[data-seconds-tens]"), Math.floor(seconds / 10));
   flip(document.querySelector("[data-seconds-ones]"), seconds % 10);
 
-  if (days == 0 && hours == 0 && minutes == 0 && seconds == 0) {
+  if (hours == 0 && minutes == 0 && seconds == 0) {
     clearInterval(countdown);
     let fram = setInterval(frame, 500);
   }
