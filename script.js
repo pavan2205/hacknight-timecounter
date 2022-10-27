@@ -1,4 +1,4 @@
-const countToDate = new Date("October 26, 2022 16:34:00").getTime();
+const countToDate = new Date("October 27, 2022 10:13:00").getTime();
 let previousTimeBetweenDates;
 let countdownTimer = () => {
   const currentDate = new Date();
@@ -12,10 +12,7 @@ function flipAllCards(time) {
   const seconds = time % 60;
   const minutes = Math.floor(time / 60) % 60;
   const hours = Math.floor(time / 3600) % 24;
-  const days = Math.floor(time / (3600 * 24));
 
-  flip(document.querySelector("[data-days-tens]"), Math.floor(days / 10));
-  flip(document.querySelector("[data-days-ones]"), days % 10);
   flip(document.querySelector("[data-hours-tens]"), Math.floor(hours / 10));
   flip(document.querySelector("[data-hours-ones]"), hours % 10);
   flip(document.querySelector("[data-minutes-tens]"), Math.floor(minutes / 10));
