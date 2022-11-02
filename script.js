@@ -1,4 +1,4 @@
-const countToDate = new Date("October 31, 2022 07:00:00").getTime();
+const countToDate = new Date("November 2, 2022 19:25:00").getTime();
 let previousTimeBetweenDates;
 let countdownTimer = () => {
   const currentDate = new Date();
